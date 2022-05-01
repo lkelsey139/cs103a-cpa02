@@ -163,7 +163,7 @@ app.post("/Bookclub/Share/Add",
         const books = new BookRecs({title,writer,genre})
         await books.save()
       }
-      res.render("Bookshare2")
+      res.render("bookshare2")
     } catch (e) {
       next(e)
     }
@@ -243,7 +243,7 @@ app.use(isLoggedIn)
 //  Starting up the server!
 // *********************************************************** //
 //Here we set the port to use between 1024 and 65535  (2^16-1)
-const port = process.env.PORT|| "5000";
+const port = process.env.PORT || "5000";
 console.log('connecting on port '+port);
 app.set("port", port);
 

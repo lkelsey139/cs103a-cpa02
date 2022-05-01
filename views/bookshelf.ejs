@@ -1,0 +1,24 @@
+<h1>
+    Welcome to your Library
+</h1>
+<div>
+    <table>
+        <thead></thead>
+        <tbody>
+    <% if (books.length >0) {%>
+        <div class="d-flex flex-wrap text-center overflow-scroll">
+        <% for (book of books) {%>
+            <div class="p-3 m-3 border border-dark bg-white">  
+                <b>Title: </b> <%=book['title']%><br>
+                <b>Author: </b><%=book['writer']%><br>
+                <b>Genre: </b><%=book['genre']%><br>
+                <a class="btn btn-info border border-dark" href="/Bookshelf/del/<%=book['_id']%>" role="button">Remove from bookshelf</a>
+            </div>
+       <%} %>
+        </div>
+    <%} else {%>
+        You do not currently have any books in your bookshelf
+    <% } %>
+    </tbody>
+    </table>
+</div>

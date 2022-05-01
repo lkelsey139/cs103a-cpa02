@@ -1,0 +1,32 @@
+
+
+    <div class="jumbotron">
+        <h1>Explore Your Interests: Random Fun Generator </h1>
+        <p></p>
+    </div>
+
+<p class = "p-3 m-3 border border-info bg-white">
+    Boredom is a terrible thing. It takes up time and can be hard to shake. As such, this app was created to find it. To offer both amusement and reading suggestions. Please browse at your leisure and sign in for more options. 
+    Have a wonderful day!
+</p>
+    
+        <div class="d-flex flex-wrap text-center overflow-scroll">
+            <div class="p-3 m-3 border border-dark bg-info">
+                <a class = "text-dark" href = "/catfacts">Random Cat Fact </a>
+            </div>
+            <div class="p-3 m-3 border border-dark bg-info">
+                <a class = "text-dark" href="/Dogs">Random Dog Photo</a>
+            </div>
+            <div class="p-3 m-3 border border-dark bg-info">
+                <a class = "text-dark" href="/Suggestions">Random Activity Suggestions</a>
+            </div>
+            <div class="p-3 m-3 border border-dark bg-info">
+                <a class = "text-dark" href="/BookClub"> Visit the BookClub </a>
+            </div>
+            <% if (loggedIn){%>
+                <div class = "p-3 m-3 border border-dark bg-info">
+                    <a class = "text-dark" href = "/Bookshelf">Visit your Bookshelf</a>
+                </div>
+            <%}%>
+            
+    

@@ -1,0 +1,45 @@
+<div>
+    <form method = "post" action = "/Bookclub/Find">
+    <div class="input-group input-group-sm mb-3">
+        <label class="input-group-text" for="genre">Genre:</label>
+        <select class="form-select form-select-sm" id="genre" type="text" name ="genre">
+          <option selected>Choose...</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Non-Fiction">Non-Fiction</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Realistic-Fiction">Realistic-Fiction</option>
+          <option value="Romance">Romance</option>
+          <option value="Tbrillers">Thrillers</option>
+          <option value="Memoir">Memoir</option>
+          <option value="Manga">Manga</option>
+          <option value="Horror">Horror</option>
+          <option value="Comics">Comics</option>
+          <option value="Dystopian">Dystopian</option>
+        </select>
+    <button type="submit" class="btn btn-info border border-dark">Submit</button>
+</form>
+    </div>
+<div>
+    <table>
+        <thead></thead>
+        <tbody>
+            <% if (books.length !=0) {%>
+                <div class="d-flex flex-wrap text-center overflow-scroll">
+                <% for (book of books) {%>
+                    <div class="p-3 m-3 border border-dark bg-white">
+                        <b>Title: </b> <%=book['title']%><br>
+                        <b>Author: </b><%=book['writer']%><br>
+                        <b>Genre: </b><%=book['genre']%><br>
+                        <a class="btn btn-info border border-dark" href="/Bookclub/Add/<%=book['_id']%>" role="button">Add to bookshelf</a>
+                    </div>   
+                <%} %>
+                </div>
+            <%} else {%>
+                We do not have any books of that genre to recommend yet. Feel free to recommend any.
+            <% } %>
+            <br>
+            <a class="btn btn-info" href="/Bookclub/Share" role="button">Suggest Books</a>
+        </tbody>
+    </table>
+</div>

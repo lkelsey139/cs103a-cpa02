@@ -8,11 +8,12 @@ Proof of concept is available at: https://drive.google.com/file/d/1SO7aEaLfRrZM7
 <h3> To access the App locally on your computer: </h3>
 1. download the git locally. <br>
 2. cd into the git folder <br>
-3. run: <b>npm install <br>
-4. run <b>node app.js <b> <br>
-5. go to localhost:5000 on computer
+3. run: <b> npm install </b> <br>
+4. run <b> node app.js </b> <br>
+5. go to <i>localhost:5000</i> on computer
 
 <h3> How to Use Application Casually </h3>
+  
   Home Page has various options for user to choose from
   
  ![image](https://user-images.githubusercontent.com/64444431/166171014-bd010614-19df-4488-8d13-a4165346b187.png)

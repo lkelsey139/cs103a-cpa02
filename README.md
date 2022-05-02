@@ -12,7 +12,7 @@ Proof of concept is available at: https://drive.google.com/file/d/1SO7aEaLfRrZM7
 4. run <b>node app.js <b> <br>
 5. go to localhost:5000 on computer
 
-<h3> How to Use Application Casually <h3>
+<h3> How to Use Application Casually </h3>
   Home Page has various options for user to choose from
   
  ![image](https://user-images.githubusercontent.com/64444431/166171014-bd010614-19df-4488-8d13-a4165346b187.png)
